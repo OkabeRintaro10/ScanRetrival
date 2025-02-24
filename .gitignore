@@ -1,0 +1,29 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Data Files
+Data/
+
+# Virtual environments
+.venv
+
+# Jupyter notebooks
+.ipynb_checkpoints
+
+# Environment files
+*.env
+.envrc
+
+# Logs
+Logs/
+
+# Workspace files
+*.code-Workspace
+
+# Docker
+.dockerignore
