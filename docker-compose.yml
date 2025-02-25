@@ -1,6 +1,6 @@
 services:
   scanretrival:
-    image: scanretrival
+    container_name: api
     build:
       context: .
       dockerfile: ./Dockerfile
@@ -10,7 +10,7 @@ services:
       - db
   db:
     image: mysql
-    env_file: ./db.env
+    env_file: ./app/envs/db.env
     ports:
      - 3306:3306
     volumes:
@@ -21,7 +21,7 @@ services:
     ports:
       - 9000:9000
       - 9001:9001
-    env_file: ./minio.env
+    env_file: ./app/envs/minio.env
     volumes:
       - "./Data/Minio/data:/data"
     
